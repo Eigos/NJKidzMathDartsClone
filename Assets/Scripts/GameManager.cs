@@ -82,7 +82,6 @@ public class GameManager : MonoBehaviour
         UpdateCharts();
     }
 
-
     private void OnEnable()
     {
         UpdateQuestionType();
@@ -228,6 +227,7 @@ public class GameManager : MonoBehaviour
                 //reset question timer
                 ResetRemainingTimeQuestion();
 
+                //reset question text color
                 mQuestionText.GetComponent<TextMeshProUGUI>().color = Color.white;
             }
             );
@@ -279,6 +279,8 @@ public class GameManager : MonoBehaviour
         mQuestion = GenerateQuestion(mCurrentQuestionType);
 
         UpdateQuestionDisplay(mQuestion);
+
+        //generating numbers to display on chart
 
         List<int> numbers = new List<int>();
 
