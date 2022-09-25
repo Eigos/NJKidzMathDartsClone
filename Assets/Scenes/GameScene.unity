@@ -3504,7 +3504,7 @@ MonoBehaviour:
   mDartDestinationDuration: 0.6
   mDartResetDelay: 1
   mQuestionDuration: 7
-  mLevelTimeDuration: 5
+  mLevelTimeDuration: 120
   mScoreIncrementAmmount: 10
   mCurrentQuestionType: 0
   mGlobalData: {fileID: 1416891992}
